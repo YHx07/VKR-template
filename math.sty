@@ -1,0 +1,62 @@
+\ProvidesPackage{math}
+
+\usepackage{mathrsfs}
+\usepackage{amsthm}
+\usepackage{mathrsfs}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{mathabx}
+\usepackage{mathtools}
+
+\renewcommand{\proofname}{\rm\bf{ Доказательство}}
+
+\renewcommand{\baselinestretch}{1.5}
+\renewcommand{\bar}{\overline}
+\renewcommand{\phi}{\varphi}
+
+\newcommand{\metricspace}{\text{$(X, \rho)$}}
+\newcommand{\topspace}{\text{$(X, \tau)$}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\F}{\mathscr{F}}
+\newcommand{\B}{\mathscr{B}}
+
+\newcommand{\psys}[1]{\pi(\mathscr{#1})}
+\newcommand{\lsys}[1]{\lambda(\mathscr{#1})}
+\newcommand{\dsys}[1]{d(\mathscr{#1})}
+\newcommand{\eps}{\varepsilon}
+
+\newcommand{\probspace}{(\Omega,\: \F,\: \P)}
+\newcommand{\dbot}{\mathbin{\text{$\bot\mkern-10mu\bot$}}}
+
+
+\newcommand{\convergencealmost}{\stackrel{\text{п.н.}}{\text{$\rightarrow$}}}
+\newcommand{\convergencebyprobability}{\stackrel{\text{$\P$}}{\text{$\rightarrow$}}}
+\newcommand{\convergencelp}{\stackrel{\text{$L^p$}}{\text{$\rightarrow$}}}
+\newcommand{\weakconvergence}{\stackrel{\text{$d$}}{\text{$\rightarrow$}}}
+
+\newcommand{\ddfrac}[2]{\frac{\displaystyle #1}{\displaystyle #2}}
+\newcommand{\seq}[2]{\{#1_#2\}_{#2 = 1}^{+\infty}}
+
+\RenewDocumentCommand{\epsilon}{}{\varepsilon}
+\RenewDocumentCommand{\phi}{}{\varphi}
+\RenewDocumentCommand{\kappa}{}{\varkappa}
+\RenewDocumentCommand{\ge}{}{\geqslant}
+\RenewDocumentCommand{\le}{}{\leqslant}
+
+\renewcommand{\P}{{\sf P}}
+\newcommand{\E}{{\sf E}}
+\newcommand{\D} { { \sf D}}
+
+\DeclareMathOperator{\cov}{cov}
+\DeclareMathOperator{\const}{const}
+\DeclareMathOperator{\conv}{conv}
+\DeclareMathOperator{\Mat}{Mat}
+\DeclareMathOperator{\disc}{disc}
+\DeclareMathOperator{\inte}{int}
+\DeclareMathOperator{\MDA}{MDA}
+
+\newcommand{\stirling}[1]{ \sqrt{2\pi #1} \left(\frac{#1}{e}\right)^{ #1 } }
+\newcommand{\soch}[2]{\text{$C_{#1}^{#2}$}}
+\newcommand{\tail}{X_{(n-k+1)},\:\ldots,\: X_{(n)}}

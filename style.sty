@@ -1,0 +1,121 @@
+\ProvidesPackage{style}
+
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{array}
+\usepackage{bm}
+\usepackage{cancel}
+
+\usepackage{chngcntr}
+\counterwithin{figure}{section}
+\counterwithin{table}{section}
+
+\usepackage{epsfig} 
+\usepackage{epstopdf}
+\usepackage{faktor} 
+\usepackage{listings}
+\usepackage{tikz-cd}
+\usepackage{titling} 
+\usepackage{multicol}
+\usepackage{url} 
+
+\usepackage[left=30mm, top=20mm, right=15mm, bottom=20mm]{geometry}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{lipsum}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{xparse}
+\usepackage{wrapfig}
+
+\usepackage{icomma}
+
+\usepackage{cmap}
+\usepackage[T2A]{fontenc} 
+\usepackage[utf8]{inputenc} 
+\usepackage[english,russian]{babel}
+\usepackage[normalem]{ulem}
+\usepackage{fancyvrb}
+
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+% Красивый шрифт
+%\usepackage{merriweather}
+%\usepackage[T1]{fontenc}
+\linespread{1.3}
+
+\selectlanguage{russian} 
+
+\usepackage{enumitem}
+\usepackage{listings}
+\usepackage{wrapfig}
+
+\usepackage{pgfplots}
+\usepackage{pgf}
+
+\usepackage{subfiles}
+
+\usepackage{mdframed}
+\usepackage[hidelinks]{hyperref}
+\usepackage{todonotes}
+
+\graphicspath{{Images/}{../Images/}{images/} {../images/}} 
+
+\usepackage{math}
+\def\mathunderline#1#2{\color{#1}\underline{{\color{black}#2}}\color{black}}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Теорема}[section]
+\newtheorem*{hypo}{Гипотеза}
+\newtheorem{lemma}{Лемма}[section]
+\newtheorem{corollary}{Следствие}
+\newtheorem*{fact}{Факт}
+
+\theoremstyle{remark}
+\newtheorem{claim}{Утверждение}[section]
+\newtheorem{remark}{Замечание}[section]
+\newtheorem*{task}{Упражнение}
+\newtheorem*{symb}{Обозначение}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Определение}[section]
+\newtheorem{example}{Пример}[section]
+
+\numberwithin{equation}{section}
+\setcounter{secnumdepth}{5}
+\setcounter{tocdepth}{5}
+
+\newenvironment{solution}
+  {\begin{proof}[Решение:]}
+  {\end{proof}}
+
+\renewcommand*{\maketitle}{
+\begin{titlepage}
+	\centering
+	{\scshape Федеральное государственное автономное образовательное учреждение высшего образования\par}
+	{\scshape <<Московский физико-технический институт\par  (национальный исследовательский институт)>>\par}
+	\vspace{0.5cm}
+	{\scshape Физтех-школа прикладной математики и физика\par}
+	{\scshape Кафедра дискретной математики\par}
+	\vspace{0.5cm}
+	{\scshape Направление: 03.03.01 Прикладные математика и физика\par}
+	{\scshape Направленность (профиль):	Физика и компьютерные технологии\par}
+	\vspace{1cm}
+	\rule{150mm}{.1pt}
+	{\scshape \large Выпускная квалификационная бакалаврская работа на тему:\par}
+	{\scshape{\bf \large Название темы}}
+	
+    \vspace{5.5cm}	
+    \hfill \break
+    Студент \underline{\hspace{10cm}} Иванов И.И.\par
+    Научный руководитель к.ф-м.н. \underline{\hspace{4.8cm}} Иванов И.И.\par
+    Зав. кафедрой д.ф-м.н., профессор \underline{\hspace{3cm}} Райгородский А.М.\par
+    \begin{center}
+    \vspace{2.5cm}
+    МОСКВА, 2021
+    \end{center}
+\end{titlepage}
+
+}

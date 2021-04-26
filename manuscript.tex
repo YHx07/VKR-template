@@ -1,0 +1,68 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage{style}
+\usepackage{fancyhdr}
+\usepackage[backend=biber, sorting=none]{biblatex}
+\usepackage{csquotes}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+
+\fancypagestyle{bib}{
+	\fancyhf{}
+	\rhead{\scshape\it{{СПИСОК ЛИТЕРАТУРЫ}}}
+	\fancyfoot[C]{\thepage}
+	\renewcommand{\headrulewidth}{0.4pt}
+}
+
+\pagestyle{fancy}
+\delimitershortfall-1sp
+\usepackage[fontsize=14pt]{scrextend}
+\renewcommand{\baselinestretch}{1.5}
+\setlength{\parindent}{1.25ex}
+
+\newcommand{\anonsection}[1]{
+    \phantomsection % Корректный переход по ссылкам в содержании
+    \section*{#1}
+    \addcontentsline{toc}{section}{\uppercase{#1}}
+}
+
+\addbibresource{references.bib}
+\renewcommand\refname{Список использованных источников}
+
+\begin{document}
+\maketitle
+\newpage
+
+\subfile{annotation}
+\newpage
+
+\tableofcontents
+\newpage
+
+\section{Обозначения и основные определения}
+\subfile{glossary}
+\newpage
+
+\section{Введение}
+\subfile{introduction}
+\newpage
+
+\section{Материалы и методы}
+\subfile{materials_and_methods}
+\newpage  
+
+\section{Полученные результаты}
+\subfile{results}
+\newpage
+
+\section{Заключение и план дальнейших исследований}
+\subfile{conclusions}
+\newpage
+
+\nocite{*}
+\newpage
+
+\pagestyle{bib} 
+\section{Список использованных источников}
+\printbibliography[heading=none]
+
+\end{document}
